@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Create Account</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  	#abc{
+
+  		padding-left: 30%;
+  		padding-right: 30%;
+  		padding-top: 15%;
+  		padding-bottom: 15%;
+  		background-color: skyblue;
+  	}
+  	#su{
+  		background-color: green;
+
+
+
+
+
+  	}
+   #su1{
+   	padding-top: 5%;
+   	padding-bottom: 15%;
+   	color: black;
+   }
+   
+  </style>
+
+    <script>
+    
+      // Function to check Whether both passwords
+      // is same or not.
+      function checkPassword(form) {
+        password1 = form.password1.value;
+        password2 = form.password2.value;
+
+        // If password not entered
+        if (password1 == '')
+          alert ("Please enter Password");
+          
+        // If confirm password not entered
+        else if (password2 == '')
+          alert ("Please enter confirm password");
+          
+        // If Not same return False.  
+        else if (password1 != password2) {
+          alert ("\nPassword did not match: Please try again...")
+          return false;
+        }
+
+        // If same return True.
+        else{
+          alert("Account created.Go to Login Page")
+          return true;
+        }
+      }
+
+
+
+
+    </script>
+
+
+
+</head>
+<body>
+
+
+
+</button></a></div>
+<div class="container" id="abc">
+
+
+<div class="col-md-auto">
+
+  <a href="login.html"><button  class="btn btn-primary"  >Go to Login page</button>
+</a>
+</div>
+
+
+
+<div  id="su1" >
+	
+  <h1 style="font-size: 300%" >Create Account</h1>
+  <h2 style="font-size: 100%" >We are happy to have a new coustomer and gain upto 50% off on all products offer valid for only new coustomers</h2>  
+
+  
+
+</div>
+
+
+
+
+
+
+<form class="row g-3" onsubmit="return checkPassword(this)">
+  <div class="col-md-12">
+    <label for="va1" class="form-label">Email</label>
+    <input type="email" class="form-control"  id="va1"  required>
+  </div>
+  <div class="col-md-12">
+    <label for="va2" class="form-label">Password</label>
+    <input type="password" class="form-control"  name="password1" id="va2"  required>
+  </div>
+ 
+  <div class="col-md-12">
+    <label for="va3" class="form-label">Confirm Password</label>
+    <input type="password" class="form-control" name="password2" id="va3" required>
+  </div>
+ 
+
+<br>
+
+<div class="col-md-12">
+
+  <button  class="btn btn-primary" onclick="myFunction()">create</button>
+
+</div>
+</form>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>
